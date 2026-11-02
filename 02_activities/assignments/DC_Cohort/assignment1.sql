@@ -138,6 +138,7 @@ CREATE TEMP TABLE new_vendor AS
 SELECT * FROM vendor;
 
 INSERT INTO new_vendor VALUES (10, "Thomass Superfood Store", "Fresh Focused", "Thomas", "Rosenthal");
+SELECT * FROM new_vendor;
 --END QUERY
 
 
