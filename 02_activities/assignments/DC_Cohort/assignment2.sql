@@ -61,7 +61,7 @@ only the customer’s most recent visit.
 HINT: Do not use the previous visit dates filter. */
 --QUERY 3
 
-SELECT *
+SELECT customer_id, market_date
 	FROM (SELECT DISTINCT customer_id, market_date,
 	DENSE_RANK() OVER (PARTITION BY customer_id ORDER BY market_date DESC) AS visit_number
 	FROM customer_purchases
