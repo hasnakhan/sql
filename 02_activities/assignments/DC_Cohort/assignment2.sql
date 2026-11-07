@@ -214,7 +214,7 @@ HINT: If you don't specify a WHERE clause, you are going to have a bad time.*/
 --QUERY 11
 
 
-DELETE FROM product_units WHERE snapshot_timestamp = (SELECT MAX(snapshot_timestamp) FROM product_units) AND product_name = "Apple Pie";
+DELETE FROM product_units WHERE snapshot_timestamp = (SELECT MIN(snapshot_timestamp) FROM product_units) AND product_name = "Apple Pie";
 SELECT * FROM product_units;
 
 --END QUERY
