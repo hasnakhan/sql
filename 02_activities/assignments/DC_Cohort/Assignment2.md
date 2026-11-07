@@ -57,7 +57,7 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+The first proposed architecture, where the changes are retained is type 2. This is a more complex framework since it requires knowing which address is the current one for each customer, and is also larger since it store more historical data. The second architecture is type 1, where the old address is overwritten so that each customer has only a single, up-to-date address, resulting in a smaller, simpler database, but losing the historical data. 
 ```
 
 ***
@@ -193,5 +193,5 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+This article explores ethical issues around neural networks by doing a deep dive on where the underlying photos and associated descriptions come from and how humans have been involved in every step of this process. The article argues that since human interpretation shapes the training data for these models, it necessarily also shapes their predictions. While this seems relatvely harmless in cases like hot dog identification, or traffic-related capchas, it is obviosuly fraught with ethical issues when it comes to labelling people. For example, security footage monitored by an AI agent trained on biased input data, say from police officers or security guards, may dispropotinately flag people of colour as a security threat, or reinforce other stereotypes. Similarly, flagging of inappropriate conent on social media sites may unfairly target harmless content from certain ethnicities or the LGBT+ comminuty. As we move toward situations like these becoming more widespread, it will be increasingly important to review training data for such biases, though doing so will undoubedly be challening in itself. For example, it will raise question like, whose opinions can be considered "unbiased", and who gets to decide those things? The article also highlights this as an important ethical issue, as in the past, these daa were collected and labelled by whoever was most available or convenient, like graduate students. The article even hihglights a case where the specific individuals are not known, but it can be safely assumed that grad students were involved because of the natire of the project. Prehaps maintaining a so-called paper trail of data curators may help with such ethical issues, if only because it will cause pwoplw to more careful assess their biases if they know they can be assosicated with their collected data? 
 ```
